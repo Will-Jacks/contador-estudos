@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contador de Estudos</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <h1 class="titulo_principal">Contador de estudo</h1>
     </header>
         <section class="conteudo_geral">
             
             <main>
                 <h2 class="titulo_quantos_dias">Quantos dias consecutivos você já estudou?</h2>
-                <input class="quantidade-de-dias" value="0"></input>
-                <p>dias</p>
+                <span class="centralizar-div-dias">
+                    <input class="quantidade-de-dias" value="0" placeholder="0"></input>
+                    <p class="p-dias">DIAS</p>
+                </span>
                 <section class="botoes_adicionar">
-                    <button onclick="adicionaValor(10)">+10 dias</button>
-                    <button onclick="adicionaValor(5)">+5 dias</button>
-                    <button onclick="adicionaValor(1)">+1 dia</button>
+                    <button onclick="adicionaValor(10)">+10 DIAS</button>
+                    <button onclick="adicionaValor(5)">+5 DIAS</button>
+                    <button onclick="adicionaValor(1)">+1 DIAS</button>
                 </section>
                 <section class="botoes_salvar_carregar">
                     <button onclick="salvar()">Salvar</button>
