@@ -1,9 +1,12 @@
+let valorDosDias = document.querySelector('.quantidade-de-dias');
+
 //Carregando automaticamente os dias estudados
-document.querySelector(".quantidade-de-dias").value = localStorage.info;
+valorDosDias.value = localStorage.info;
+
 
 //Salva localmente os dias estudados
 function salvar(){
-    localStorage.info = document.querySelector(".quantidade-de-dias").value;
+    localStorage.info = valorDosDias.value;
 }
 
 /*function carregar(){
@@ -13,8 +16,8 @@ function salvar(){
 
 //Transforma o valor em number e adiciona os dias de acordo com os botões
 function adicionaValor(valor) {
-    let valorInput = document.querySelector('.quantidade-de-dias').value;
+    let valorInput = valorDosDias.value;
     let transformaString = parseInt(valorInput);
     let somaTudo = transformaString + valor;
-    document.querySelector('.quantidade-de-dias').value = somaTudo;
+    valorDosDias.value = somaTudo;
 }
